@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h>
+enum level{Level1 = 1, Level2,Level3,Level4};
+
+int main()
+{
+    char *arr[100] = {"AKASH", "ANAND", "KARTHIKEYAN", "SAHEETH"};
+    
+    for (int i = Level1; i <= Level4; i++){
+        printf("\n Employee %s Level is : %d\n", arr[i-1], i);
+    }
+    return 0;
+    
+}
